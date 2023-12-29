@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+  <% current_user.saved_searches.order(created_at: :desc).each do |saved_search| %>
+    <p class="saved-search"><%= saved_search.search_params %></p>
+  <% end %>
+<% else %>
+  <div>
+    <%= link_to "Sign In to save your searches", new_user_session_path, class: "genereal-btn-styles" %>
+  </div>
+<% end %>

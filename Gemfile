@@ -71,3 +71,4 @@ end
 gem "devise", "~> 4.9", ">= 4.9.3"
 gem "bootstrap"
 gem "sassc-rails"
+gem 'faker', '~> 3.2', '>= 3.2.2'
